@@ -89,6 +89,7 @@ const CategoryHeader = styled.header`
 
 const DeleteAllBtn = styled.button`
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
   background-color: red;
   color: white;
   font-size: 16px;
@@ -96,6 +97,7 @@ const DeleteAllBtn = styled.button`
   width: 30%;
   align-self: flex-end;
   border: none;
+  box-shadow: 1px 1px 1px black;
 `;
 
 export default function ToDoList() {
