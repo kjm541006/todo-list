@@ -3,28 +3,46 @@ import { useForm } from "react-hook-form";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import styled from "styled-components";
 import { Categories, categoryState, toDoState } from "../atoms";
-import { MdOutlineAdd } from "react-icons/md";
 
 interface IForm {
   toDo: string;
 }
 
 const Form = styled.form`
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  margin: 0 auto;
-  padding-left: 40px;
+  margin: 0px auto 24px;
 `;
 
 const Input = styled.input`
-  border: 1px solid red;
+  border: none;
   border-radius: 16px;
-  width: 75%;
+  width: 85%;
   height: 36px;
-  padding: 4px;
+  padding: 4px 4px 4px 12px;
   font-size: 16px;
+  &:focus {
+    outline: none;
+  }
 `;
 
 const Button = styled.button`
+  -webkit-tap-highlight-color: transparent;
+  @media (hover: hover) {
+    &:hover {
+      color: #181818;
+      background-color: #2ecc71;
+      transition: all 0.3s;
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      color: #181818;
+      background-color: #2ecc71;
+      transition: all 0.3s;
+    }
+  }
   background: #181818;
   border: 1px solid white;
   box-shadow: none;
@@ -35,11 +53,6 @@ const Button = styled.button`
   font-size: 18px;
   color: white;
   margin-left: 12px;
-  &:hover {
-    color: #181818;
-    background-color: #2ecc71;
-    transition: all 0.3s;
-  }
 `;
 
 export default function CreateToDo() {
@@ -61,11 +74,7 @@ export default function CreateToDo() {
             //   message: "길이가 2 이상이어야 합니다",
             // },
           })}
-          placeholder={
-            category === Categories.TO_DO
-              ? "해야 할 일을 추가하세요"
-              : "현재 진행 중인 작업을 추가하세요"
-          }
+          placeholder={category === Categories.TO_DO ? "할 일 추가" : "현재 진행 중인 작업 추가"}
         />
       )}
 
