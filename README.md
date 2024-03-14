@@ -2,7 +2,7 @@
 
 ## 🔗 URL
 
-[https://kjm541006.github.io/todo-list](https://kjm541006.github.io/todo-list){:target="\_blank"}
+[https://kjm541006.github.io/todo-list](https://kjm541006.github.io/todo-list){:target="_blank"}
 
 ---
 
