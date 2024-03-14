@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# To Do List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🔗 URL
 
-## Available Scripts
+https://jumin-portfolio.vercel.app
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧑‍💻 개발 배경
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+리액트와 타입스크립트를 사용하여 개발하는 프로젝트를 해보고 싶었습니다. 너무 어렵지 않으면서 일상생활에서 유용하게 사용할 수 있는 프로젝트를 생각해보니 To Do List 프로젝트가 가장 적절하다고 판단하여 개발을 하게 되었습니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧑‍💻 기능 설명
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+할 일, 진행 중, 완료 3가지 탭으로 나뉘며 각 탭에는 진행중인 과제를 알 수 있습니다.
 
-### `npm run build`
+#### - 할 일
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+할 일 탭에서는 오늘 할 일을 추가 할 수 있으며 추가 후 시작 완료 삭제 3가지 동작을 수행 할 수 있습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### - 진행 중
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+진행 중 탭에서는 할 일 탭에서 시작한 현재 진행 중인 일을 알 수 있습니다. 하는 일을 미루거나 완료, 삭제를 할 수 있으며 미루면 다시 할 일 탭으로 할 일이 넘어가게 됩니다.
 
-### `npm run eject`
+#### - 완료
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+완료 탭에서는 완료된 할 일을 확인할 수 있습니다. 오늘 완료한 할 일이 몇 개인지 확인 가능하며 전체 삭제 및 일부 삭제가 가능합니다.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
