@@ -14,6 +14,7 @@ const Header = styled.h1`
   margin: 20px;
   font-size: 36px;
   text-align: center;
+  font-weight: 700;
 `;
 
 const Main = styled.main`
@@ -141,7 +142,7 @@ export default function ToDoList() {
 
   return (
     <Container>
-      <Header>To Dos</Header>
+      <Header>To Do List</Header>
       <hr />
       <Main>
         <ButtonContainer>
@@ -156,14 +157,10 @@ export default function ToDoList() {
           </Button>
         </ButtonContainer>
         <MainContainer>
-          {category === Categories.TO_DO && <CategoryHeader>To Do</CategoryHeader>}
-          {category === Categories.DOING && (
-            <CategoryHeader>{toDos.length}개 진행 중</CategoryHeader>
-          )}
+          {category === Categories.TO_DO && <CategoryHeader>할 일</CategoryHeader>}
+          {category === Categories.DOING && <CategoryHeader>{toDos.length}개 진행 중</CategoryHeader>}
           {category === Categories.DONE && <CategoryHeader>{toDos.length}개 완료!!</CategoryHeader>}
-          {category === Categories.DONE && toDos.length !== 0 && (
-            <DeleteAllBtn onClick={deleteAll}>전체 삭제</DeleteAllBtn>
-          )}
+          {category === Categories.DONE && toDos.length !== 0 && <DeleteAllBtn onClick={deleteAll}>전체 삭제</DeleteAllBtn>}
           <CreateToDo />
           {toDos?.map((toDo) => (
             <ToDo key={toDo.id} {...toDo} />

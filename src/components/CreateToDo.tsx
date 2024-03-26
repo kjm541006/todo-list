@@ -69,16 +69,12 @@ export default function CreateToDo() {
         <Input
           {...register("toDo", {
             required: "할 일을 입력하세요",
-            // minLength: {
-            //   value: 2,
-            //   message: "길이가 2 이상이어야 합니다",
-            // },
           })}
           placeholder={category === Categories.TO_DO ? "할 일 추가" : "현재 진행 중인 작업 추가"}
         />
       )}
 
-      {category !== Categories.DONE && <Button>Add</Button>}
+      {category !== Categories.DONE && <Button>추가</Button>}
     </Form>
   );
 }
